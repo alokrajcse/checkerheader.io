@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>ASSAN - Simplifying Your College Life</title>
+  <title>First Page - ASSAN</title>
+  <style>
+    /* Customize the banner styles for the first page */
+    /* ... (same as the styles in the first HTML code) ... */
+  </style>
 </head>
 <body>
+  <div class="banner">
+    <h1>Prepare with <span class="assan">A</span><span class="assan">S</span><span class="assan">S</span><span class="assan">A</span><span class="assan">N</span></h1>
+    <p>Exams are near! Share the ASSAN app with your friends and help them prepare for exams too!</p>
+  </div>
+
   <script>
-    // JavaScript code to check if the "visited" cookie is set
-    var visitedCookie = document.cookie.split(";").map(cookie => cookie.trim()).find(cookie => cookie.startsWith("visited="));
-    
-    if (visitedCookie && visitedCookie.split("=")[1] === "true") {
-      // User has visited before, redirect to the second_page.html
-      window.location.href = "second_page.html";
-    } else {
-      // User is visiting for the first time, display the first page (index.html)
-      window.location.href = "index.html";
-    }
+    // JavaScript code to set a cookie to track user's visit
+    document.cookie = "visited=true; expires=Thu, 01 Jan 2099 00:00:00 UTC";
   </script>
 </body>
 </html>
