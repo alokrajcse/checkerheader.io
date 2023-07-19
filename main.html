@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ASSAN - Simplifying Your College Life</title>
+</head>
+<body>
+  <script>
+    // JavaScript code to check if the "visited" cookie is set
+    var visitedCookie = document.cookie.split(";").map(cookie => cookie.trim()).find(cookie => cookie.startsWith("visited="));
+    
+    if (visitedCookie && visitedCookie.split("=")[1] === "true") {
+      // User has visited before, redirect to the second_page.html
+      window.location.href = "second_page.html";
+    } else {
+      // User is visiting for the first time, display the first page (index.html)
+      window.location.href = "index.html";
+    }
+  </script>
+</body>
+</html>
